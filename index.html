@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Health Dashboard</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem; line-height: 1.6; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; }
+  code { background: rgba(127,127,127,.16); padding: .1rem .3rem; border-radius: .25rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3);
+           font-size: .9rem; opacity: .8; }
+</style>
+</head>
+<body>
+
+<h1>Personal Health Dashboard</h1>
+<p class="sub">A private, single-user tool for viewing the owner's own Google Health data.</p>
+
+<h2>What this application does</h2>
+<p>
+  This application reads health and fitness data from a <strong>single Google Account</strong>
+  — the account of its owner — through the Google Health API, and presents it as a personal
+  dashboard and a local spreadsheet of daily trends. It is used to track long-term personal
+  metrics such as weight, body-fat percentage, resting heart rate, heart-rate variability,
+  sleep and steps.
+</p>
+
+<h2>How it is used</h2>
+<p>
+  The application runs only on the owner's own computer. It is not offered to the public, it has
+  no other users, it accepts no sign-ups, and it does not collect data from anyone else.
+</p>
+
+<h2>Google user data</h2>
+<p>
+  Access is granted by the owner through Google's standard OAuth 2.0 consent flow, using
+  <strong>read-only</strong> Google Health scopes. The application can read the owner's health
+  data; it cannot modify or delete it. OAuth refresh tokens are stored encrypted on the owner's
+  own device using the Windows Data Protection API (DPAPI) and are never transmitted to any
+  third party. No Google user data is shared, sold, or used for advertising.
+</p>
+
+<h2>Privacy policy</h2>
+<p>
+  Full details of what is accessed, how it is stored, and how it is deleted are in the
+  <a href="./privacy.html">privacy policy</a>.
+</p>
+
+<footer>
+  Contact: <a href="mailto:mail.vishalkaran@gmail.com">mail.vishalkaran@gmail.com</a><br>
+  This application is not affiliated with Google. Google Health is a trademark of Google LLC.
+</footer>
+
+</body>
+</html>
