@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Personal Health Dashboard</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem; line-height: 1.6; }
+  h1 { font-size: 1.5rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: .5rem 0; }
+  th, td { text-align: left; padding: .4rem .5rem; border-bottom: 1px solid rgba(127,127,127,.3);
+           vertical-align: top; font-size: .95rem; }
+  code { background: rgba(127,127,127,.16); padding: .1rem .3rem; border-radius: .25rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.3);
+           font-size: .9rem; opacity: .8; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Personal Health Dashboard &middot; Last updated 2 October 2026</p>
+
+<h2>1. Who this covers</h2>
+<p>
+  "Personal Health Dashboard" (the "Application") is a private, locally-run tool operated by its
+  owner for the sole purpose of viewing the owner's <em>own</em> Google Health data. The Application
+  has exactly one user and is not made available to the public. There are therefore no other
+  data subjects, and no data belonging to anyone else is collected, processed or stored.
+</p>
+
+<h2>2. What Google user data is accessed</h2>
+<p>
+  Access is granted by the owner through Google's OAuth 2.0 consent flow. The Application requests
+  <strong>read-only scopes only</strong> from the Google Health API:
+</p>
+<table>
+  <tr><th>Scope</th><th>Data</th></tr>
+  <tr><td><code>googlehealth.activity_and_fitness.readonly</code></td><td>Activity, workouts, steps</td></tr>
+  <tr><td><code>googlehealth.health_metrics_and_measurements.readonly</code></td><td>Weight, body-fat percentage, heart rate, HRV, SpO<sub>2</sub>, respiratory rate</td></tr>
+  <tr><td><code>googlehealth.sleep.readonly</code></td><td>Sleep sessions and stages</td></tr>
+  <tr><td><code>googlehealth.nutrition.readonly</code></td><td>Nutrition and hydration entries</td></tr>
+  <tr><td><code>googlehealth.logged_symptoms.readonly</code></td><td>Logged symptoms</td></tr>
+  <tr><td><code>googlehealth.mindfulness.readonly</code></td><td>Mindfulness sessions</td></tr>
+  <tr><td><code>googlehealth.ecg.readonly</code></td><td>ECG recordings</td></tr>
+  <tr><td><code>googlehealth.irn.readonly</code></td><td>Irregular rhythm notifications</td></tr>
+  <tr><td><code>googlehealth.settings.readonly</code></td><td>Google Health settings</td></tr>
+  <tr><td><code>googlehealth.profile.readonly</code></td><td>Profile information</td></tr>
+</table>
+<p>
+  <strong>No write, edit or delete scopes are requested.</strong> The Application cannot create,
+  modify or remove any data in the owner's Google Account.
+</p>
+
+<h2>3. How the data is used</h2>
+<p>
+  Solely to display the owner's own health data back to the owner: as a dashboard of current
+  metrics and trends, and as a local daily spreadsheet. The data is used for the owner's personal
+  tracking and for no other purpose.
+</p>
+
+<h2>4. How the data is stored</h2>
+<ul>
+  <li><strong>OAuth credentials.</strong> The refresh token is stored on the owner's own computer, encrypted with the Windows Data Protection API (DPAPI), which binds decryption to the owner's Windows user account. It is never transmitted to any third party.</li>
+  <li><strong>Health data.</strong> Retrieved data is written to files on the owner's own computer and is not uploaded to any server operated by the Application.</li>
+  <li>The Application operates no servers, no databases and no cloud storage of its own.</li>
+</ul>
+
+<h2>5. How the data is shared</h2>
+<p>
+  <strong>It is not shared.</strong> Google user data obtained by this Application is never sold,
+  rented, traded, transferred or disclosed to any third party; is not used for advertising,
+  marketing or profiling; is not used to train machine-learning models; and is not used for any
+  purpose other than those described in section 3.
+</p>
+
+<h2>6. Limited Use disclosure</h2>
+<p>
+  The Application's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+  User Data Policy</a>, including the <strong>Limited Use</strong> requirements.
+</p>
+
+<h2>7. Retention and deletion</h2>
+<p>
+  The owner may revoke the Application's access at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Locally
+  stored health data and the encrypted token can be deleted at any time by deleting the relevant
+  files from the owner's computer. Because the Application stores nothing on any server, revoking
+  access and deleting the local files removes all data held by the Application.
+</p>
+
+<h2>8. Changes</h2>
+<p>
+  Any change to this policy will be published on this page with an updated date. Because this is a
+  single-user tool, changes affect only that user.
+</p>
+
+<h2>9. Contact</h2>
+<p>
+  <a href="mailto:mail.vishalkaran@gmail.com">mail.vishalkaran@gmail.com</a>
+</p>
+
+<footer>
+  This Application is not affiliated with, endorsed by, or sponsored by Google. Google Health is a
+  trademark of Google LLC. &middot; <a href="./index.html">Home</a>
+</footer>
+
+</body>
+</html>
